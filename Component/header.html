@@ -166,6 +166,12 @@ a {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+#searchMenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 #hideMenu {
     position: absolute;
     top: -50px;
@@ -400,6 +406,10 @@ td {
 
 .burger-check2:checked~.menu {
     max-height: 300px;
+}
+
+.burger-check2:checked~.menu #searchMenu {
+    display: block;
 }
 
 .burger-check2:checked~.burger-check2 {
@@ -1129,7 +1139,7 @@ textarea,
         </li>
       </div> -->
         <div id="searchMenu">
-
+            1111
         </div>
     </div>
 </body>

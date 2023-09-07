@@ -3,7 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <title>header</title>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $('input[class="burger-check"]').change(function() {
+                if($('#burger-check').prop('checked') == true) {
+                    $('#burger-check2').prop('checked', false);
+                }
+            });
+            $('input[class="burger-check2"]').change(function() {
+                if($('#burger-check2').prop('checked') == true) {
+                    $('#burger-check').prop('checked', false);
+                }
+            });
+        });
+    </script>
+<!--    <script type="text/javascript">-->
+<!--            const ele = document.getElementById('temp');-->
+<!--        $(function() {-->
+<!--            $('input[type=checkbox]').on('change', function() {-->
+<!--                if ($(this).is(':checked')) {-->
+<!--                    $('#aaa').css('background', '#f00');-->
+<!--                }-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
     <style>
     /* 초기화 식, sanitize.css로 초기화 하는 것도 있음 */
 
@@ -49,9 +74,9 @@ button {
     #allMenu2 {
       display: block;
     }
+
     
 }
-
 
 
 /* 메뉴바 세부 목록 */
@@ -137,9 +162,18 @@ a {
 
 #allMenu {
   display: none;
-  position: relative;
+  position: absolute;
 }
 
+#hideMenu {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 370px;
+    height: 70px;
+    z-index: 3;
+}
+/* 버거1 */
 .burger-icon {
   cursor: pointer;
   display: inline-block;
@@ -183,6 +217,12 @@ a {
 
 .burger-check {
   display: none;
+}
+
+
+.burger-check:checked~#menu {
+    display: block;
+    z-index: 3;
 }
 
 .burger-check:checked~.menu {
@@ -302,16 +342,69 @@ td {
   margin: 0;
 }
 
-.menuSearch {
-  display: inline-block;
-  position: absolute;
-  z-index: 2;
-  padding: 8px 0;
-  top: 2px;
-  right: 90px;
-  width: auto;
-  margin: 0;
+
+/* 버거2*/
+.burger-icon2 {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    padding: 8px 0;
+    top: 10px;
+    right: 90px;
+    user-select: none;
+    width: 29px;
+    height: 29px;
+    margin: 0;
+    background-image: url("../images/header/menuSearch.png");
 }
+
+/*.burger-icon2 .burger-sticks2 {*/
+/*    background: #fff;*/
+/*    display: block;*/
+/*    height: 2px;*/
+/*    position: relative;*/
+/*    transition: background .2s ease-out;*/
+/*    width: 18px;*/
+/*}*/
+
+/*.burger-icon2 .burger-sticks2:before,*/
+/*.burger-icon2 .burger-sticks2:after {*/
+/*    background: #fff;*/
+/*    content: '';*/
+/*    display: block;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    transition: all .2s ease-out;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.burger-icon2 .burger-sticks2:before {*/
+/*    top: 5px;*/
+/*}*/
+
+/*.burger-icon2 .burger-sticks2:after {*/
+/*    top: -5px;*/
+/*}*/
+
+.burger-check2 {
+    display: none;
+}
+
+
+.burger-check2:checked~#menu {
+    display: block;
+    z-index: 3;
+}
+
+.burger-check2:checked~.menu {
+    max-height: 300px;
+}
+
+.burger-check2:checked~.burger-check2 {
+
+}
+
 
 /* sanitize css 초기화, 건들지 말 것!!! */
 /* Document
@@ -898,8 +991,9 @@ textarea,
                 <a href="#"><img src="../images/header/logo2_w.png"></a>
             </div>
             <div class="mainLogo2">
-                <a href="#"><a href="#"><img src="../images/header/logo2_w.png"></a>
+                <a href="#"><img src="../images/header/logo2_w.png"></a>
             </div>
+
             <li><a href="#">여기저기</a>
                 <ul>
                     <li><a href="#">전체</a></li>
@@ -949,11 +1043,16 @@ textarea,
     <div class="menuSearch">
         <button onclick=""><img src="../images/header/menuSearch.png"></button>
     </div>
-    
+
+    <!--  검색 버튼  -->
+    <input class="burger-check2" type="checkbox" id="burger-check2" /><label class="burger-icon2" for="burger-check2"><span class="burger-sticks2"></span></label>
+
     <!-- 햄버거 버튼과 전체 메뉴 -->
     <input class="burger-check" type="checkbox" id="burger-check" /><label class="burger-icon" for="burger-check"><span class="burger-sticks"></span></label>
+
     <div class="menu">
         <div id="allMenu">
+            <div id="hideMenu"></div>
             <table>
                 <tr>
                   <th scope="col">여기저기</td>
@@ -1032,6 +1131,9 @@ textarea,
             </ul>
         </li>
       </div> -->
+        <div id="searchMenu">
+
+        </div>
         <div id="allMenuWhiteSpace"></div>
     </div>
 </body>

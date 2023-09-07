@@ -2,7 +2,7 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>board</title>
 
 
     <!--meta-->
@@ -16,9 +16,10 @@
       
       <div class=""></div>
       <!--css-->
-      <link rel="stylesheet" href="css/index.css">
-      <link rel="stylesheet" href="css/mobile.css">
-      <link rel="stylesheet" href="css/sanitize.css">
+      <link rel="stylesheet" href="../css/index.css">
+      <link rel="stylesheet" href="../css/mobile.css">
+      <link rel="stylesheet" href="../css/sanitize.css">
+      <link rel="stylesheet" href="/board/css/board.css">
       
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -35,10 +36,20 @@
       <link href="favicon.ico" rel="apple-touch-icon">
   </head>
   <body>
-    <h1>안녕하세요^^</h1>
-    <h3>여기는 게시판</h3>
-    <h3>몰라몰라</h3>
+    <div class="board-banner"></div>
+    <div class="board-container">
+      <div class="board-button-container">
+        <div class="board-button-group1">
+          <div id="board-announcement" class="board-button"><h1>1공지</h1></div>
+          <div id="board-matchTest" class="board-button"><h1>2매칭</h1></div>
+        </div>
+        <div class="board-button-group2">
+          <div id="board-abandonedDog" class="board-button"><h1>3유기</h1></div>
+          <div id="board-free" class="board-button"><h1>4자유</h1></div>
+        </div>
+        <div>
+          <div id="board-boast" class="board-button"><h1>5자랑</h1></div>
+        </div>
+      </div>
+    </div>
   </body>
-
-
- 

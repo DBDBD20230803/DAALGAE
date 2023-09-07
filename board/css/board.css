@@ -1,0 +1,70 @@
+.board-banner {
+  width: 100%;
+  height: 500px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  background-color: #A6CEF7;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.board-button-container {
+  width: 1401.68px;
+  height: 942.15px;
+  margin-top: 189.85px;
+  border: 1px solid black;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 23px;
+}
+
+.board-button-group1 {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.board-button-group2 {
+  gap: 26px;
+}
+
+.board-button {
+  display: flex;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+#board-announcement {
+  width: 449.69px;
+  height: 449.69px;
+}
+
+#board-matchTest {
+  width: 449.69px;
+  height: 449.69px;
+}
+
+#board-abandonedDog {
+  width: 449.69px;
+  height: 380.02px;
+}
+
+#board-free {
+  width: 449.69px;
+  height: 532.02px;
+}
+
+#board-boast {
+  width: 450px;
+  height: 942px;
+}
+

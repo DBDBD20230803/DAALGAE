@@ -1,0 +1,213 @@
+/* 이 내용은 나중에 mainIntro.css에 합칠 것이다. 작업을 위해 잠깐 쓰는 것 뿐이다. */
+
+@media (max-width: 1587px) {
+    #mainMapContentOne {
+        display: none;
+    }
+    #mainMapContentTwo {
+        display: block;
+    }
+}
+
+@media (min-width: 1588px) {
+    #mainMapContentOne {
+        display: block;
+    }
+    #mainMapContentTwo {
+        display: none;
+    }
+}
+
+
+
+/* 임시다 */
+#weatherBox {
+    position: relative;
+    width: 100%;
+    height: 1010px;
+    z-index: -1;
+}
+
+#mainMap {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background-color: #fff;
+}
+
+.mainTourLine {
+    position: relative;
+    width: 166px;
+    height: 403px;
+    border-right: 1px solid #515151;
+}
+
+
+.mainMapFlag {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 136px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/mainPage/mainMapFlag.png");
+}
+
+.TourWithYou {
+    display: inline-block;
+    position: relative;
+    font-size: 64px;
+    font-weight: bold;
+    color: #5176AF;
+    width: 1000px;
+    top: -5px;
+    left: 150px;
+    height: 60px;
+}
+
+.mainMapDesc {
+    position: relative;
+    font-size: 40px;
+    font-weight: 100;
+    color: #000;
+    width: 1000px;
+    left: 136px;
+    height: 60px;
+}
+
+.daalgaeLogo {
+    position: relative;
+    background-image: url("../images/mainPage/DAALGAE_LOGO.png");
+    width: 1148px;
+    height: 182px;
+    left: 0px;
+    left: 0px;
+    top: 300px;
+    float: right;
+}
+
+.mainMapKorea {
+    position: absolute;
+    float: right;
+    top: 40px;
+    right: 300px;
+    width: 546px;
+    height: 866px;
+    background-image: url("../images/mainPage/mainMapKorean.png");
+    z-index: 3;
+}
+
+.MapContentTwoBox {
+    display: block;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-250px);
+    position: relative;
+}
+
+.mainMapFlag2 {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    left: -4px;
+    width: 45px;
+    height: 45px;
+    background-image: url("../images/mainPage/mainMapFlag.png");
+}
+
+.TourWithYou2 {
+    display: inline-block;
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    color: #5176AF;
+    top: -5px;
+    height: 60px;
+}
+
+.mainMapDesc2 {
+    display: block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 100;
+    width: 500px;
+    color: #000;
+    height: 60px;
+}
+
+.mainMapKorea2 {
+    position: relative;
+    top: 60px;
+    margin: auto;
+    width: 546px;
+    height: 866px;
+    background-image: url("../images/mainPage/mainMapKorean.png");
+}
+.daalgaeLogo2 {
+    position: relative;
+    top: 750px;
+    margin: auto;
+    background-image: url("../images/mainPage/DAALGAE_LOGO.png");
+    width: 861px;
+    height: 136.5px;
+    background-size: contain;
+}
+/* top 집어넣을 때 스크롤 할 때 에니메이션도 고려해보자 댕댕여지도 참고 */
+#mainInfo {
+    /* border는 구분선 용도*/
+    border-top: 1px solid;
+    position: relative;
+    width: 100%;
+    height: 745px;
+}
+
+.infoBookImage {
+    position: relative;
+    display: inline-block;
+    background-image: url("../images/mainPage/mainInfoBook.png");
+    width: 58px;
+    height: 58px;
+}
+
+.infoText {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 64px;
+    top: -6px;
+    left: 15px;
+    display: inline-block;
+}
+
+.infoDesc {
+    position: relative;
+    font-weight: 300;
+    color: #222;
+    font-size: 22px;
+    top: -15px;
+}
+
+.infoHeader {
+    position: relative;
+    left: 120px;
+    /*left: 191px; 였지만 마음에 안 듬*/
+    top: 68px;
+}
+
+.infoImage1 {
+    position: relative;
+    display: inline-block;
+    left: 110px;
+    top: 115px;
+    width: 309px;
+    height: 288px;
+    background-image: url("../images/mainPage/mainInfoImage1.png");
+}
+
+.infoImage2 {
+    position: relative;
+    display: inline-block;
+    width: 309px;
+    height: 288px;
+    background-image: url("../images/mainPage/mainInfoImage2.png");
+}

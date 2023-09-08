@@ -14,32 +14,41 @@
 
 
     </script>
+    <style>
+        #mainBackground {
+            position: relative;
+        }
+    </style>
         <link rel="stylesheet" type="text/css" href="../css/index.css">
         <link rel="stylesheet" type="text/css" href="../css/mobile.css">
         <link rel="stylesheet" type="text/css" href="../css/sanitize.css">
         <link rel="stylesheet" type="text/css" href="mainIntro.css">
         <!--    나중에 mainIntro.css에 합칠 예정    -->
-        <link rel="stylesheet" type="text/css" href="temp.css">
     <title>Title</title>
 </head>
 <body>
 
   <div id="headers"></div>
-  <div id="mainBackground"></div>
-  <div id="mainIntroduce">소중한 나의 반려견, 이제 여기서 시작하세요</div>
-  <div id="weatherBox">
-      <div class="weatherRate">
-          오늘의 산책지수
+  <div id="mainBackgroundSpace">
+      <div id="mainBackground">
+  </div>
+
+      <div id="mainIntroduce">소중한 나의 반려견, 이제 여기서 시작하세요</div>
+      <div id="weatherBox">
+          <div class="weatherRate">
+              오늘의 산책지수
+          </div>
+          <div class="weatherGood">
+              좋음 😄
+          </div>
+          <div class="weatherTemp">
+              온도 22℃
+          </div>
+          <div class="weatherDog"></div>
+          <button class="weatherSelectButton"></button>
       </div>
-      <div class="weatherGood">
-          좋음 😄
-      </div>
-      <div class="weatherTemp">
-          온도 22℃
-      </div>
-      <div class="weatherDog"></div>
-      <button class="weatherSelectButton"></button>
-    </div>
+  </div>
+
     <div id="mainInform">
         <div class="informLeft"></div><div class="informRight"></div>
     </div>

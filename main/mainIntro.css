@@ -1,0 +1,105 @@
+#mainBackground {
+    background-image: url("../images/header/mainPageBackground.png");
+}
+
+@media (min-width: 1101px) {
+    #mainIntroduce {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #mainIntroduce {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    #mainIntroduce {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #mainIntroduce {
+        font-size: 25px;
+    }
+}
+
+#mainIntroduce {
+    position: relative;
+    text-align: center;
+    top: 190px;
+    font-weight: bold;
+    color: #fff;
+    z-index: -1;
+}
+
+#weatherBox {
+    position: relative;
+    margin: 0 auto;
+    width: 917px;
+    height: 178px;
+    top: 390px;
+    border-radius: 89px;
+    background-color: rgba(0, 126, 255, 0.15);
+    display: flex;
+    align-items: center;
+}
+#weatherBox .weatherRate {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+#weatherBox .weatherGood {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+#weatherBox .weatherTemp {
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 100px;
+}
+
+#weatherBox .weatherDog {
+    background-image: url("../images/weather/weatherDog.png");
+    position: absolute;
+    left: 757px;
+    top: -187px;
+    width: 151px;
+    height: 219px;
+
+}
+
+#weatherBox .weatherSelectButton {
+    background-image: url("../images/weather/weatherSelectButton.png");
+    position: relative;
+    margin-left: 82px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+#mainInform {
+    position: absolute;
+    top: 1080px;
+    width: 100%;
+    height: 143px;
+}
+
+#mainInform .informLeft {
+    position: absolute;
+    width: 25.9%;
+    height: 143px;
+    background-color: #639DD7;
+}
+#mainInform .informRight {
+    position: absolute;
+    left: 25.9%;
+    width: 74.1%;
+    height: 143px;
+    background-color: #A6CEF7;
+}

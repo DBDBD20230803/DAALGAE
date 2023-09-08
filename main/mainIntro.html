@@ -5,16 +5,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready( function() {
-        $("#headers").load("../Component/header.html");
-    });
+            $("#headers").load("../Component/header.html");
+            $('#headers').css("position", "fixed");
+            $('#headers').css("width", "100%");
+            $('#headers').css("z-index", "5");
+        });
+
+
+
     </script>
         <link rel="stylesheet" type="text/css" href="../css/index.css">
         <link rel="stylesheet" type="text/css" href="../css/mobile.css">
         <link rel="stylesheet" type="text/css" href="../css/sanitize.css">
         <link rel="stylesheet" type="text/css" href="mainIntro.css">
+        <!--    나중에 mainIntro.css에 합칠 예정    -->
+        <link rel="stylesheet" type="text/css" href="temp.css">
     <title>Title</title>
 </head>
 <body>
+
   <div id="headers"></div>
   <div id="mainBackground"></div>
   <div id="mainIntroduce">소중한 나의 반려견, 이제 여기서 시작하세요</div>
@@ -33,6 +42,35 @@
     </div>
     <div id="mainInform">
         <div class="informLeft"></div><div class="informRight"></div>
+    </div>
+    <div id="mainMap">
+        <div id="mainMapContentOne">
+            <div class="mainTourLine"></div>
+            <div class="mainMapFlag"></div>
+            <div class="TourWithYou">TOUR WITH YOU</div>
+            <div class="mainMapDesc">댕댕이와 함께 떠나는 전국팔도 여기저기</div>
+            <div class="mainMapKorea"></div>
+            <div class="daalgaeLogo"></div>
+        </div>
+        <div id="mainMapContentTwo">
+            <div class="MapContentTwoBox">
+                    <div class="mainMapFlag2"></div>
+                    <div class="TourWithYou2">TOUR WITH YOU</div>
+                    <div class="mainMapDesc2">댕댕이와 함께 떠나는 전국팔도 여기저기<div class="daalgaeLogo2"></div>
+                </div>
+            </div>
+            <div class="mainMapKorea2"></div>
+        </div>
+    </div>
+    <div id="mainInfo">
+        <div class="infoHeader">
+            <div class="infoBookImage"></div>
+            <div class="infoText">INFO</div>
+            <div class="infoDesc">더 올바른 방법으로 사랑하는 방법</div>
+        </div>
+        <div class="infoImage1"></div>
+        <div class="infoImage2"></div>
+        <div class="infoImage3"></div>
     </div>
 </body>
 </html>

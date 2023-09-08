@@ -1,5 +1,12 @@
 /* 이 내용은 나중에 mainIntro.css에 합칠 것이다. 작업을 위해 잠깐 쓰는 것 뿐이다. */
 
+/* 기타 내용들
+1920-1686 = 234
+234+174 = 408
+578-475 = 103
+1080-1005 = 75
+
+*/
 @media (max-width: 1587px) {
     #mainMapContentOne {
         display: none;

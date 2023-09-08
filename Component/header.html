@@ -18,6 +18,23 @@
                 }
             });
         });
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 200) {
+                    $('#toTop').fadeIn();
+                    $('#toTop').css('left', $('#sidebar').offset().left);
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+
+            $("#toTop").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
     </script>
 <!--    <script type="text/javascript">-->
 <!--            const ele = document.getElementById('temp');-->
@@ -36,6 +53,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+#toTop {
+    position: fixed; 	/* 포지션 고정 */
+    right: 54px;
+    bottom: 75px; 		/* 밑에서 100px */
+    display: none; 		/* 보여지지 없음 - 기본적으로 안보여지게 */
+    z-index: 9999; 		/* 포지션을 먼저 지정후 z-좌표(레이어) : 9999입니다. */
 }
 
 button {
@@ -169,6 +194,8 @@ a {
 #searchMenu {
     display: none;
     position: absolute;
+    width: 100%;
+    height: 350px;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -994,7 +1021,7 @@ textarea,
         1. 링크는 레이블을 달아야 좋기는 하겠다.
         2. 메뉴만 만들고 끝이 아니다.
      -->
-
+    <div id="toTheTop"><a id="toTop" href="#"><img src="../images/mainPage/mainToTop.png"></a></div>
     <!-- 메뉴바 목록 -->
     <div id="menu">
         <ul>

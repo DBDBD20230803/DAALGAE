@@ -121,39 +121,24 @@
     </div>
   </div>
   <script>
-    // $(document).ready(function() {
-    //   $('#board-dangdanginfotoon-button').hover(
-    //     function() {
-    //       $('#board-dangdanginfotoon').text('자세히 보기'); // 원하는 텍스트로 변경
-    //     },
-    //     function() {
-    //       $('#board-dangdanginfotoon').text('댕댕정보툰'); // 마우스 떠날 때 원래 텍스트로 복원
-    //     }
-    //   );
-    // });
-    $(document).ready(function() {
-      $('.board-button').hover(
-        function() {
-          var buttonId = $(this).data('button-id'); // 해당 버튼의 식별자 가져오기
-          var newText = ''; // 각 버튼에 따라 변경할 텍스트 설정
+      $(document).ready(function() {
+    // 각 버튼을 호버할 때 이름을 "자세히보기"로 변경
+    $('.board-button-button').hover(
+      function() {
+        // 해당 버튼의 h3 태그를 찾아 "자세히보기"로 텍스트 변경
+        $(this).find('.board-button-text-title').text('자세히보기');
+      },
+      function() {
+        // 호버가 끝나면 다시 원래 이름으로 변경
+        $(this).find('.board-button-text-title').text($(this).data('original-text'));
+      }
+    );
 
-          // 버튼에 따라 newText 값을 설정
-          switch (buttonId) {
-            case 'announcement':
-              newText = '새로운 텍스트 1';
-              break;
-            case 'abandonedDog':
-              newText = '새로운 텍스트 2';
-              break;
-            // 다른 버튼에 대한 설정 추가
-          }
-
-          $(this).find('.board-button-text-title').text(newText); // 호버된 버튼 내부의 텍스트 변경
-        },
-        function() {
-          $(this).find('.board-button-text-title').text('원래 텍스트'); // 마우스 떠날 때 원래 텍스트로 복원
-        }
-      );
+    // 각 버튼의 원래 이름을 data-original-text 속성에 저장
+    $('.board-button-button').each(function() {
+      var originalText = $(this).find('.board-button-text-title').text();
+      $(this).data('original-text', originalText);
     });
+  });
   </script>
 </body>

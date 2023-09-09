@@ -47,6 +47,10 @@ input:focus{
     margin: 3% 0;
 }
 
+#delete .deleteWrap .deleteContents .deletPwdConfirm input#pwd::placeholder{
+    color: #929292;
+}
+
 #delete .deleteWrap .deleteContents .deletPwdConfirm p{
     font-weight: 300;
 }

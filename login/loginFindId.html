@@ -19,7 +19,7 @@
       <link rel="stylesheet" href="../css/index.css">
       <link rel="stylesheet" href="../css/mobile.css">
       <link rel="stylesheet" href="../css/sanitize.css">
-      <link rel="stylesheet" href="/delete/css/delete.css">
+      <link rel="stylesheet" href="css/loginFidId.css">
       
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -36,18 +36,18 @@
       <link href="favicon.ico" rel="apple-touch-icon">
   </head>
   <body>
-        <section id="delete">
-          <div class="deleteWrap container">
+        <section id="FindId">
+          <div class="FindIdWrap container">
 
-            <div class="deleteContents">
+            <div class="FindIdContents clearfix">
 
-              <h5 class="deleteTitle">뭐든 다알개</h5>
+              <h5 class="FindIdTitle">뭐든 다알개</h5>
 
-              <form class="deletPwdConfirm">
-                <h5 class="deletePwdConfirmTitle">탈퇴 비밀번호 확인</h5>
-                <input type="password" name="password" id="pwd" placeholder="비밀번호"/>
-                <p>탈퇴 시 동일한 이메일로 재가입이 불가능 합니다.😥</p>
-                <input type="submit" name="deleteBtn" id="deleteBtn" value="탈퇴"/>
+              <form class="PutemailAdressForm">
+                <h5 class="PutemailAdressTitle">본인 확인</h5>
+                <p>이메일 주소를 입력해주세요.</p>
+                <input type="text" name="putEmailAddress" id="putEmailAddress" placeholder="이메일"/>
+                <input type="submit" name="AuthBtn" id="AuthBtn" value="인증번호 받기"/>
               </form>
             </div>
           </div>

@@ -19,7 +19,7 @@
       <link rel="stylesheet" href="../css/index.css">
       <link rel="stylesheet" href="../css/mobile.css">
       <link rel="stylesheet" href="../css/sanitize.css">
-      <link rel="stylesheet" href="css/loginFidId.css">
+      <link rel="stylesheet" href="css/matchingTestResult.css">
       
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -36,23 +36,28 @@
       <link href="favicon.ico" rel="apple-touch-icon">
   </head>
   <body>
-        <section id="FindId">
-          <div class="FindIdWrap container">
+        <section id="MatchingTestResult">
+            <div class="MatchingTestResultWrap container">
+                
 
-            <div class="FindIdContents clearfix">
+                <div class="MatchingTestResultContent">
+                    <h4>추천 반려견은</h4>
+                    <h2 class="testResultDog">말티즈</h2>
+                    <div class="resultImg">
+                        <img src="images/maltese.png" alt="maltese">
+                    </div>
+                    <p class="resultText">
+                        지적인 <span>말티즈!</span><br>
+                        말티즈는 주인이 집에 오면 꼬리를 미친 듯이 흔들고 주인을 반겨줍니다.<br>
+                        말티즈는 폐쇄적 사회성을 갖는 견종이라 사회성이 좋지는 않지만 주인과는 관계는 무척좋습니다.<br>
+                    </p>
+                </div>
 
-              <h5 class="FindIdTitle">뭐든 다알개</h5>
-
-              <form class="PutemailAdressForm" action="" method="post">
-                <h5 class="PutemailAdressTitle">본인 확인</h5>
-                <p>이메일 주소를 입력해주세요.</p>
-                <input type="text" name="putEmailAddress" id="putEmailAddress" placeholder="이메일"/>
-                <input type="submit" name="AuthBtn" id="AuthBtn" value="인증번호 받기"/>
-              </form>
+                <button class="retry">
+                    <a href="matchingTestMain.html">다시하기<span class="retryImg"><img src="images/retry.png" alt="retry"></span></a>
+                </button>
             </div>
-          </div>
         </section>
   </body>
 
 
- 

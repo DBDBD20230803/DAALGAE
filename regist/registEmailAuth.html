@@ -19,7 +19,7 @@
       <link rel="stylesheet" href="../css/index.css">
       <link rel="stylesheet" href="../css/mobile.css">
       <link rel="stylesheet" href="../css/sanitize.css">
-      <link rel="stylesheet" href="css/matchingTestMain.css">
+      <link rel="stylesheet" href="css/registEmailAuth.css">
       
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -36,15 +36,27 @@
       <link href="favicon.ico" rel="apple-touch-icon">
   </head>
   <body>
-        <section id="MatchingTestMain">
-            <div class="MatchingTestMainWrap container">
-                <h3>나에게 맞는 강아지 찾기</h3>
-                <div class="testMainImg">
-                    <img src="images/maingImg.png" alt="mainImg">
+        <section id="registemailAuth">
+          <div class="registemailAuthWrap container">
+
+            <div class="registemailAuthContents clearfix">
+
+              <h5 class="registemailAuthTitle">뭐든 다알개</h5>
+
+              <form class="registemailAuthForm" action="" method="post">
+
+                <div class="putAuthNumWrap">
+                    <input type="text" name="putAuthNum" id="putAuthNum" placeholder="인증번호를 입력해주세요."/>
+                    <div class="authTime">남은 시간 : <span class="timeRemain">2 : 44</span></div>
                 </div>
-                <div class="start"><a href="test1.html">시작하기</a></div>
+                <input type="submit" name="reSendAutNum" id="reSendAutNum" value="인증번호 재전송"/>
+                <input type="submit" name="AuthComplete" id="AuthComplete" value="인증확인"/>
+              </form>
+
             </div>
+          </div>
         </section>
   </body>
 
 
+ 

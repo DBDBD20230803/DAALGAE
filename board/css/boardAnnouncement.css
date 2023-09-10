@@ -1,0 +1,93 @@
+.board-announcement-banner {
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    background-color: #A6CEF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-banner-image-2 {
+    position: absolute;
+    top: 47%;
+    left: 77%;
+    width: 300px;
+}
+
+.board-button-back-image {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+}
+
+.board-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.board-announcement-searchBar {
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    height: 100px;
+}
+
+.search-buttons {
+    position: relative;
+}
+
+.search-category-button {
+    display:block;
+    position: absolute;
+    left: 60%;
+    top: 19px;
+    width: 180px;
+    height: 60px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+}
+
+.search-textSearch {
+    display:block;
+    position: absolute;
+    left: 75%;
+    top: 19px;
+    width: 300px;
+    height: 60px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+}
+
+.search-category-button h3 {
+    color: black;
+    position: relative;
+    left: 30%;
+    top: 25%;
+}
+
+.search-category-button:hover {
+    cursor:pointer;
+}
+
+.searchBar-categoryList-button {
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 18px;
+    border-radius: 5px;
+}
+
+.board-readingGlasses {
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 18px;
+    border-radius: 5px;
+}

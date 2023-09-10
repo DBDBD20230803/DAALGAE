@@ -137,6 +137,16 @@
 
 }
 
+#weatherBox0 .weatherSelectButton0 {
+    background-image: url("../images/weather/weatherSelectButton.png");
+    position: relative;
+    margin-left: 62px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-size: contain;
+}
+
 #weatherBox1 {
     position: relative;
     margin: 0 auto;
@@ -212,7 +222,7 @@
 #weatherBox2 .weatherTemp2 {
     font-size: 12px;
     font-weight: 300;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 #weatherBox2 .weatherDog2 {
@@ -228,7 +238,7 @@
 #weatherBox2 .weatherSelectButton2 {
     background-image: url("../images/weather/weatherSelectButton.png");
     position: relative;
-    margin-left: 41px;
+    margin-left: 26px;
     width: 15px;
     height: 15px;
     background-color: transparent;

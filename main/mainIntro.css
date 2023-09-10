@@ -21,6 +21,41 @@
     }
 }
 
+@media (min-width: 1000px) {
+    #weatherBox0 {
+        display: flex;
+    }
+    #weatherBox1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    #weatherBox0 {
+        display: none;
+    }
+    #weatherBox1 {
+        display: flex;
+    }
+}
+
+
+@media (min-width: 715px) {
+    #weatherBox2 {
+        display: none;
+    }
+}
+
+@media (max-width: 715px) {
+    #weatherBox1 {
+        display: none;
+    }
+    #weatherBox2 {
+        display: flex;
+    }
+}
+
+
 @media (max-width: 900px) {
     #mainIntroduce {
         font-size: 30px;
@@ -42,7 +77,7 @@
     z-index: -1;
 }
 
-#weatherBox {
+#weatherBox0 {
     position: relative;
     margin: 0 auto;
     width: 917px;
@@ -50,28 +85,27 @@
     top: 390px;
     border-radius: 89px;
     background-color: rgba(0, 126, 255, 0.15);
-    display: flex;
     align-items: center;
 }
-#weatherBox .weatherRate {
+#weatherBox0 .weatherRate0 {
     font-size: 30px;
     font-weight: bold;
     margin-left: 100px;
 }
 
-#weatherBox .weatherGood {
+#weatherBox0 .weatherGood0 {
     font-size: 40px;
     font-weight: bold;
     margin-left: 60px;
 }
 
-#weatherBox .weatherTemp {
+#weatherBox0 .weatherTemp0 {
     font-size: 25px;
     font-weight: 300;
     margin-left: 100px;
 }
 
-#weatherBox .weatherDog {
+#weatherBox0 .weatherDog0 {
     background-image: url("../images/weather/weatherDog.png");
     position: absolute;
     left: 757px;
@@ -81,14 +115,104 @@
 
 }
 
-#weatherBox .weatherSelectButton {
+#weatherBox1 {
+    position: relative;
+    margin: 0 auto;
+    width: 688px;
+    height: 134px;
+    top: 410px;
+    border-radius: 67px;
+    background-color: rgba(0, 126, 255, 0.15);
+    align-items: center;
+}
+#weatherBox1 .weatherRate1 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 75px;
+}
+
+#weatherBox1 .weatherGood1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 45px;
+}
+
+#weatherBox1 .weatherTemp1 {
+    font-size: 19px;
+    font-weight: 300;
+    margin-left: 75px;
+}
+
+#weatherBox1 .weatherDog1 {
+    background-image: url("../images/weather/weatherDog.png");
+    position: absolute;
+    left: 570px;
+    top: -140px;
+    width: 113px;
+    height: 164px;
+    background-size: contain;
+}
+
+#weatherBox1 .weatherSelectButton1 {
     background-image: url("../images/weather/weatherSelectButton.png");
     position: relative;
-    margin-left: 82px;
-    width: 30px;
-    height: 30px;
+    margin-left: 62px;
+    width: 23px;
+    height: 23px;
     background-color: transparent;
+    background-size: contain;
 }
+
+/* #weatherBox2 */
+
+#weatherBox2 {
+    position: relative;
+    margin: 0 auto;
+    width: 458px;
+    height: 89px;
+    top: 420px;
+    border-radius: 45px;
+    background-color: rgba(0, 126, 255, 0.15);
+    align-items: center;
+}
+#weatherBox2 .weatherRate2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#weatherBox2 .weatherGood2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#weatherBox2 .weatherTemp2 {
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 50px;
+}
+
+#weatherBox2 .weatherDog2 {
+    background-image: url("../images/weather/weatherDog.png");
+    position: absolute;
+    top:-95px;
+    left: 380px;
+    width: 75px;
+    height: 109px;
+    background-size: contain;
+}
+
+#weatherBox2 .weatherSelectButton2 {
+    background-image: url("../images/weather/weatherSelectButton.png");
+    position: relative;
+    margin-left: 41px;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    background-size: contain;
+}
+
 
 #mainInform {
     position: relative;

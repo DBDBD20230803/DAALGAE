@@ -61,6 +61,7 @@ input:focus{
 }
 
 
+
 #regist .registWrap .registContents .registForm input{
     display: block;
     text-indent: 30px;
@@ -114,6 +115,7 @@ input:focus{
 
 #regist .registWrap .registContents .registForm input#putEmailAddress{
     background: url(../images/email.png) no-repeat 13px center #DAECFF;
+    margin-bottom: 1% !important;
 }
 
 
@@ -126,10 +128,15 @@ input:focus{
 }
 
 
-
 #regist .registWrap .registContents .registForm input::placeholder{
     color: #929292;
     font-size: 0.9em;
+}
+
+#regist .registWrap .registContents .registForm .cantUseId{
+    color: #FF0000;
+    font-size: 0.8em;
+    text-align: right;
 }
 
 #regist .registWrap .registContents .registForm input#AuthBtn{

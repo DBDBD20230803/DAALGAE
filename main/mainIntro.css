@@ -77,6 +77,12 @@
         width: 76%;
         font-size: 22px;
     }
+    .informIconBox1 {
+        display: none;
+    }
+    .informIconBox2 {
+        display: none;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -87,6 +93,19 @@
         left: 0px;
         width: 100%;
         font-size: 18px;
+    }
+    .informDown {
+        position: relative;
+        top: 15px;
+    }
+    .informDate {
+        position: relative;
+    }
+    .informIconBox1 {
+        display: block;
+    }
+    .informIconBox2 {
+        display: block;
     }
 }
 
@@ -320,6 +339,30 @@
     margin-right: 30px;
 }
 
+.informOne {
+    position: relative;
+    display: block;
+}
+
+.informIconBox1 {
+    background-image: url("../images/mainPage/informIconBox1.png");
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    margin-left: -627px;
+    margin-bottom: 37px;
+    background-size: contain;
+}
+
+.informIconBox2 {
+    background-image: url("../images/mainPage/informIconBox2.png");
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    margin-left: -440px;
+    margin-bottom: 37px;
+    background-size: contain;
+}
 
 .Silder1 {
     background-image: url("../images/mainPage/informUpButton.png");
@@ -343,6 +386,10 @@
     display: block;
 }
 
+.informSlider {
+    display: block;
+}
+
 
 /*!* 기타 내용들*/
 /*1920-1686 = 234*/
@@ -350,7 +397,7 @@
 /*578-475 = 103*/
 /*1080-1005 = 75*/
 
-@media (max-width: 1587px) {
+@media (max-width: 1387px) {
     #mainMapContentOne {
         display: none;
     }
@@ -359,7 +406,7 @@
     }
 }
 
-@media (min-width: 1588px) {
+@media (min-width: 1388px) {
     #mainMapContentOne {
         display: block;
     }
@@ -430,7 +477,7 @@
     position: absolute;
     float: right;
     top: 40px;
-    right: 300px;
+    right: 100px;
     width: 546px;
     height: 866px;
     background-image: url("../images/mainPage/mainMapKorean.png");
@@ -495,10 +542,10 @@
 /* top 집어넣을 때 스크롤 할 때 에니메이션도 고려해보자 댕댕여지도 참고 */
 #mainInfo {
     /* border는 구분선 용도*/
-    border-top: 1px solid;
+    border-top: 1px solid gray;
     position: relative;
     width: 100%;
-    height: 745px;
+    margin-bottom: 100px;
 }
 
 .infoBookImage {
@@ -534,20 +581,152 @@
     top: 68px;
 }
 
+.infoImageBox {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .infoImage1 {
     position: relative;
-    display: inline-block;
-    left: 110px;
+    display: flex;
     top: 115px;
     width: 309px;
     height: 288px;
+    margin-left: 25px;
+    margin-right: 25px;
     background-image: url("../images/mainPage/mainInfoImage1.png");
 }
 
 .infoImage2 {
     position: relative;
-    display: inline-block;
+    display: flex;
+    width: 301px;
+    height: 285px;
+    top: 110px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-image: url("../images/mainPage/mainInfoImage2.png");
+}
+
+.infoImage3 {
+    position: relative;
+    display: flex;
+    width: 301px;
+    height: 280px;
+    top: 115px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-image: url("../images/mainPage/mainInfoImage3.png");
+}
+
+.infoImage4 {
+    position: relative;
+    display: flex;
     width: 309px;
     height: 288px;
-    background-image: url("../images/mainPage/mainInfoImage2.png");
+    top: 125px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-image: url("../images/mainPage/mainInfoImage4.png");
+}
+
+.infoImageDesc1 {
+    width: 305px;
+    width: 305px;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+.infoImageDesc2 {
+    width: 305px;
+    width: 305px;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.infoImageDesc3 {
+    width: 305px;
+    width: 305px;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.infoImageDesc4 {
+    width: 305px;
+    width: 305px;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+
+/*.BoxToPush {*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    float: right;*/
+/*    top: 125px;*/
+/*    width: 100px;*/
+/*    height: 288px;*/
+/*}*/
+
+/* 갤러리 */
+#mainGallery {
+    border-top: 1px solid gray;
+    position: relative;
+    width: 100%;
+    height: 745px;
+}
+
+.galleryText1 {
+    position: relative;
+    left: 120px;
+    top: 68px;
+    font-size: 64px;
+    font-weight: 100;
+}
+
+.galleryText2 {
+    position: relative;
+    left: 560px;
+    top: -15px;
+}
+
+.galleryText2-1 {
+    position: relative;
+    font-size: 23px;
+}
+
+.galleryText2-2 {
+    position: relative;
+    font-size: 23px;
+    color: #A2BCE4;
+}
+
+.galleryText3 {
+    position: relative;
+    top: -25px;
+    left: 120px;
+    font-size: 64px;
+    font-weight: bold;
+    color: #A2BCE4;
+}
+
+.logoInGallery {
+    position: absolute;
+    background-image: url("../images/mainPage/DAALGAE_LOGO.png");
+    width: 1148px;
+    height: 182px;
+    left: -82px;
+    top: 480px;
 }

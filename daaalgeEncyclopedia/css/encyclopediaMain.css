@@ -37,6 +37,7 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    padding: 0px 0px 100px 0px;
 }
 .infoImageBox a {
     font-weight: 700;
@@ -52,8 +53,8 @@
     top: 115px;
     width: 309px;
     height: 288px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
     border: 1px solid #D8D8D8;
     background-color: #fff;
     background-image: url("../images/mainPage/mainInfoImage1.png");
@@ -65,8 +66,8 @@
     width: 301px;
     height: 285px;
     top: 110px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
     border: 1px solid #D8D8D8;
     background-color: #fff;
     background-image: url("../images/mainPage/mainInfoImage2.png");
@@ -78,8 +79,8 @@
     width: 301px;
     height: 280px;
     top: 115px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
     border: 1px solid #D8D8D8;
     background-color: #fff;
     background-image: url("../images/mainPage/mainInfoImage3.png");
@@ -91,8 +92,8 @@
     width: 309px;
     height: 288px;
     top: 125px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
     border: 1px solid #D8D8D8;
     background-color: #fff;
     background-image: url("../images/mainPage/mainInfoImage4.png");
@@ -138,7 +139,7 @@
 
 .infoImageDesc1 a {
     position: relative;
-    top: -170px;
+    top: -175px;
 }
 
 .infoImageAndDesc1 {

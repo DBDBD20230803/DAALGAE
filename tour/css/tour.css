@@ -54,7 +54,7 @@ input:focus{
 #tour .tourWrap .tourContents .mapApi{
     width: 100%;
     position: relative;
-} 
+}
 
 #tour .tourWrap .tourContents .mapApi h4{
     width: 100%;
@@ -67,10 +67,10 @@ input:focus{
 }
 
 #tour .tourWrap .tourContents .mapSearch{
-    width: 22%;
-    position: absolute;
-    left: 0;
-    top: 10%;
+    width: 370px;
+    position: fixed;
+    left: 0px;
+    top: -70px;
     transform: translateY(50%);
     border-radius: 0 20px 20px 0;
     box-shadow: 2px 2px 5px #393939;

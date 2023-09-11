@@ -1,0 +1,206 @@
+input:focus{
+    outline: none;
+}
+
+#tourList{
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+#tourList .tourListBg{
+    width: 100%;
+    height: 500px;
+    background-color: #A6CEF7;
+    position: relative;
+}
+
+#tourList .tourListBg::after{
+    content: "";
+    background: url(../images/bgImg.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+}
+
+#tourList .tourListBg h3{
+    text-align: center;
+    padding-top: 200px;
+}
+
+#tourList .tourListWrap{
+    width: 100%;
+    padding: 5% 0;
+    position: relative;
+}
+
+#tourList .tourListWrap::after{
+    content: "";
+    position: absolute;
+    background: url(../images/bgDAALGAE.png) no-repeat center;
+    width: 1200px;
+    height: 190px;
+    background-size: contain;
+    right: -15%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+#tourList .tourListSearch{
+    width: 100%;
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 0.5%;
+    margin-top: 3%;
+}
+
+#tourList .tourListSearch .tourListSearchWrap form{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#tourList .tourListSearch .tourListSearchWrap form select.locSelect{
+    border: none;
+    border-radius: 5px;
+    padding: 0.5%;
+    width: 7%;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/arrow.png) no-repeat 100px center #F6F6F6;
+    background-size: 20px;
+    color: #222;
+}
+
+#tourList .tourListSearch .tourListSearchWrap form select.locSelect::-ms-expand{
+    appearance: none;
+}
+
+
+#tourList .tourListSearch .tourListSearchWrap form select.locSelect:focus{
+    outline: none;
+}
+
+input::-ms-clear,
+input::-ms-reveal{
+	display:none;width:0;height:0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	display:none;
+}
+
+#tourList .searchBox{
+    width: 30%;
+}
+
+#tourList .searchBox input{
+
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 5px;
+    padding: 1.8% 0.5%;
+}
+
+#tourList .searchBox input#searchLoc{
+    width: 50%;
+    margin-right: 5px;
+    background: url(../images/search.png) no-repeat 13px center #F6F6F6;
+    text-indent: 40px;
+    background-size: 20px;
+}
+
+#tourList .searchBox input#searchLoc::placeholder{
+    color: #BBBBBB;
+}
+
+#tourList .searchBox input#searchBtn{
+    width: 15%;
+    color: #fff;
+    background-color: #A6CEF7;
+
+}
+
+
+
+
+#tourList .tourListWrap .tourListContents{
+    width: 100%;
+}   
+
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}   
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox{
+    width: 30%;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    position: relative;
+}   
+
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxImg{
+    width: 100%;
+}   
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxImg a{
+    width: 100%;
+}  
+
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxImg a img{
+    width: 100%;
+}
+    
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxTxt{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5%;
+    color: #222;
+    background-color: #fff;
+    border-top: 1px solid #D8D8D8;
+    border-radius: 0 0 5px 5px;
+}
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxTxt .placeName p{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxTxt .placeLoca{
+    width: 100%;
+}
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxTxt .placeLoca img{
+    max-width: 100%;
+}
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxTxt .placeLoca p{
+    display: inline-block;
+}
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxTxt .placePhone img{
+    max-width: 100%;
+}
+
+#tourList .tourListWrap .tourListContents .tourListContentsWrap .tourListBox .tourListBoxTxt .placePhone p{
+    display: inline-block;
+}

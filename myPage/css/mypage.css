@@ -308,7 +308,15 @@ p{
 }
 
 #myPage .myPageWrap .myPageContents .myPageBoxRight .myInfo > form > .myInfo5 .spreadBtn{
-    width: 10%;
+    width: 15%;
+}
+
+#myPage .myPageWrap .myPageContents .myPageBoxRight .myInfo > form > .myInfo5 .spreadBtn i{
+    font-size: 0.8em;
+}
+
+::before{
+    line-height: 0;
 }
 
 #myPage .myPageWrap .myPageContents .myPageBoxRight .myInfo > form > .myInfo5 .spreadBtn span{
@@ -329,9 +337,13 @@ p{
 
 #myPage .myPageWrap .myPageContents .myPageBoxRight .dogInfo{
     width: 100%;
-    display: none;
+/*    display: none;*/
+    transition: all .3s;
 }
 
+.toggle{
+    display: block;
+}
 
 #myPage .myPageWrap .myPageContents .myPageBoxRight .dogInfo .dogInfoMore{
     width: 100%;

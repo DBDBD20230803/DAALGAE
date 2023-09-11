@@ -25,7 +25,7 @@ input:focus{
     width: 100%;
 }
 
-#authFail .authFailWrap .authFailContents h5.putAuthNumberTitle{
+#authFail .authFailWrap .authFailContents h5.authFailTitle{
     width: 100%;
     position: absolute;
     left: 0;
@@ -73,6 +73,11 @@ input:focus{
 
 #authFail .authFailWrap .authFailContents .authFailForm p{
     font-weight: 300;
+}
+
+#authFail .authFailWrap .authFailContents .authFailForm .authFailInputWrap{
+    width: 100%;
+    position: relative;
 }
 
 #authFail .authFailWrap .authFailContents .authFailForm .authFailInputWrap .authFailAlert{

@@ -69,6 +69,7 @@ input:focus{
 #tour .tourWrap .tourContents .mapSearch{
     width: 370px;
     position: fixed;
+    z-index: 3;
     left: 0px;
     top: -70px;
     transform: translateY(50%);

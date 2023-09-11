@@ -132,3 +132,12 @@
     width: 4000px;
     height: 0px;
 }
+
+.SubHeading3 {
+    position: relative;
+    top: -240px;
+    left: 330px;
+    font-size: 30px;
+    color: #222;
+    font-weight: 900;
+}

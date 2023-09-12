@@ -1,0 +1,120 @@
+.board-aRS-banner {
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    background-color: #A6CEF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-banner-image-2 {
+    position: absolute;
+    top: 47%;
+    left: 77%;
+    width: 300px;
+}
+
+.board-button-back-image {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+}
+
+.board-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.board-aRS-container {
+    position: relative;
+    margin: 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.aRS-buttons {
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    gap: 20px;
+}
+
+.aRS-buttons div {
+    width: 100%;
+}
+
+.aRS-punishment-period {
+    width: 120px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aRS-user {
+    border: 0;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.sanction-reason, .sanction-reason textarea{
+    border: 0;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    resize: none;
+    text-align: left;
+}
+
+.aRS-punishment-period select {
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 60px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #A6CEF7;
+    width: 100px;
+    height: 60px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.submit-button button {
+    width: 100%;
+    height: 100%;
+    background-color: #A6CEF7;
+    border: 0;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    cursor: pointer;
+}

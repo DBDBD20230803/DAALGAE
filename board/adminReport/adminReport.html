@@ -2,7 +2,7 @@
 <html lang="ko" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>boardAbandonedAdoptInfo</title>
+    <title>adminReport</title>
 
     <!--meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/sanitize.css">
-    <link rel="stylesheet" href="/board/css/boardAbandonedAdoptInfo.css">
+    <link rel="stylesheet" href="/board/css/boardAdminReport.css">
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -31,39 +31,32 @@
     <link href="favicon.ico" rel="apple-touch-icon">
 </head>
 <body>
-    <div class="board-abandoned-banner">
-        <h3>입양안내</h3>
+    <div class="board-adminReport-banner">
+        <h3>신고관리</h3>
         <div>
             <a href="/board/mainBoard.html" alt="back-arrow-to-main">
                 <img src="/board/images/board-back-button.png" class="board-button-back-image" alt="back-arrow-to-board-main">
             </a>
         </div>
         <div>
-            <img src="/board/images/board-banner-image.png" class="board-banner-image" alt="walking-with-a-dog-image">
-        </div>
-    </div>
-    <div class="board-abandoned-header-menu">
-        <div class="abandoned-protection">
-            <a href="/board/abandonedBoard.html">보호중인 강아지</a>
-        </div>
-        <div class="abandoned-center">
-            <a href="/board/abandonedBoardCenter.html">동물보호센터</a>
-        </div>
-        <div class="abandoned-adoptInfo">
-            <a href="/board/abandonedBoardAdoptInfo.html">입양안내</a>
-        </div>
-        <div class="abandoned-pickupInfo" id="abandoned-pickupInfo">
-            <a href="/board/abandonedBoardPickupInfo.html">습득시 안내</a>
+            <img src="/board/images/board-banner-image-2.png" class="board-banner-image-2" alt="play-with-dog-image">
         </div>
     </div>
     <div class="board-container">
-        <div class="board-abandoned-searchBar">
+        <div class="board-adminReport-searchBar">
             <div class="search-buttons">
-                <div class="abandoned-search-category">
-                    <select name="abandoned-search-category" id="abandoned-search-category">
-                        <option value="지역">지역</option>
+                <div class="adminReport-head-title-category">
+                    <select name="adminReport-head-title-category" id="adminReport-head-title-category">
+                        <option value="말머리" selected>말머리</option>
+                        <option value="용품">용품</option>
+                        <option value="먹거리">먹거리</option>
+                    </select>
+                </div>
+                <div class="adminReport-search-category">
+                    <select name="adminReport-search-category" id="adminReport-search-category">
                         <option value="제목">제목</option>
                         <option value="제목내용">제목 + 내용</option>
+                        <option value="작성자">작성자</option>
                     </select>
                 </div>
                 <div class="search-by-text">
@@ -75,32 +68,25 @@
                 </div>
             </div>
         </div>
-        <div class="board-abandoned-content-container">
-            <a href="/board/abandonedBoardSelect.html">
-                <div class="abandoned-content">
-                    <div class="abandoned-content-img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="abandoned-content-detail">
-                        <div class="a-c-title">
-                            <h4>공고번호 : 광주-북구-2023-00650</h4>
-                        </div>
-                        <div class="a-c-location">
-                            <img src="/board/images/abandoned-location.png" alt="writer">
-                            <h5>발견장소 : </h5>
-                            <h5>북구 본촌동</h5>
-                        </div>
-                        <div class="a-c-gender">
-                            <img src="/board/images/abandoned-gender.png" alt="date">
-                            <h5>성별 : </h5>
-                            <h5>수컷</h5>
-                        </div>
-                        <div class="a-c-breed">
-                            <img src="/board/images/abandoned-breed.png" alt="date">
-                            <h5>품종 : </h5>
-                            <h5>믹스견</h5>
-                        </div>
-                    </div>
+        <div class="board-list-container">
+            <div class="board-postCategory">
+                <h4 id="postNo">번호</h4>
+                <h4 id="postTitle">제목</h4>
+                <h4 id="postUser1">작성자</h4>
+                <h4 id="postDate">등록일자</h4>
+                <h4 id="postUser2">신고자</h4>
+                <h4 id="postStatus">상태</h4>
+            </div>
+        </div>
+        <div class="postList">
+            <a href="/board/adminReportBoardSelect.html" class="post">
+                <div class="post-info">
+                    <h4 id="testPost-postNo">1</h4>
+                    <h4 id="testPost-postTitle">집가고싷다시파</h4>
+                    <h4 id="testPost-postUser1">rladbqls</h4>
+                    <h4 id="testPost-postDate">2023-09-11</h4>
+                    <h4 id="testPost-postUser2">dlthakd</h4>
+                    <h4 id="testPost-postStatus">미완료</h4>
                 </div>
             </a>
         </div>

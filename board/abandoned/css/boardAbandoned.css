@@ -161,51 +161,75 @@ button[type="submit"]:hover {
     cursor: pointer;
 }
 
-.board-abandoned-center-content-container {
+.board-abandoned-content-container {
     width: 80%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
     position: relative;
     margin-bottom: 30px;
-    justify-content: flex-start;
-    align-items: center;
 }
 
-.center-table {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.center-table div div > div {
+.abandoned-content {
+    width: calc(100% - 15px);
+    height: 450px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #DBDBDB;
+    position: relative;
+    overflow: hidden;
+}
+
+.abandoned-content-img {
     width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #A6CEF7;
 }
 
-.center-table div div div:first-child{
-    font-size: 20px;
-    font-weight: bold;
+.abandoned-content-detail {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5%;
 }
 
-.jurisdiction-area {
-    width: 20%;
+.abandoned-content-detail div > img {
+    width: 25px;
+    height: 25px;
 }
 
-.shelter-name {
-    width: 20%;
+.a-c-title {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    gap: 5px;
+    white-space:nowrap;
 }
 
-.phone-number {
-    width: 20%;
+.a-c-location {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    gap: 5px;
 }
 
-.shelter-address {
-    width: 40%;
+.a-c-gender {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    gap: 5px;
+}
+
+.a-c-breed {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    gap: 5px;
 }
 
 .board-paging-button {

@@ -59,6 +59,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -161,74 +162,52 @@ button[type="submit"]:hover {
     cursor: pointer;
 }
 
-.board-abandoned-content-container {
+.board-abandoned-center-content-container {
     width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.abandoned-content {
-    width: calc(100% - 15px);
-    height: 450px;
-    border: 1px solid #D8D8D8;
-    border-radius: 5px;
     display: flex;
-    flex-direction: column;
     position: relative;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
-.abandoned-content-img {
+.center-table {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
-    border: 0;
-    background-color: #A6CEF7;
 }
 
-.abandoned-content-detail {
-    position: relative;
-    width: 90%;
-    height: 40%;
+.center-table div div > div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-left: 5%;
-}
-
-.abandoned-content-detail div > img {
-    width: 25px;
-    height: 25px;
-}
-
-.a-c-title {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 25px;
-    gap: 5px;
+    border: 1px solid #DBDBDB;
+    border-radius: 1px;
+    width: 100%;
+    height: 60px;
 }
 
-.a-c-location {
-    display: flex;
-    align-items: center;
-    height: 25px;
-    gap: 5px;
+.center-table div div div:first-child{
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.a-c-gender {
-    display: flex;
-    align-items: center;
-    height: 25px;
-    gap: 5px;
+.jurisdiction-area {
+    width: 20%;
 }
 
-.a-c-breed {
-    display: flex;
-    align-items: center;
-    height: 25px;
-    gap: 5px;
+.shelter-name {
+    width: 20%;
+}
+
+.phone-number {
+    width: 20%;
+}
+
+.shelter-address {
+    width: 40%;
 }
 
 .board-paging-button {

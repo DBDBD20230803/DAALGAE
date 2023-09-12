@@ -1,4 +1,4 @@
-.board-free-banner {
+.board-adminReport-banner {
     width: 100%;
     height: 500px;
     margin: 0px;
@@ -30,7 +30,7 @@
     position: relative;
 }
 
-.board-free-searchBar {
+.board-adminReport-searchBar {
     border-top: 1px solid #D8D8D8;
     position: relative;
     margin-top: 150px;
@@ -58,7 +58,7 @@
     gap: 10px;
 }
 
-.free-head-title-category {
+.adminReport-head-title-category {
     width: 120px;
     height: 60px;
     border-radius: 5px;
@@ -67,7 +67,7 @@
     align-items: center;
 }
 
-.free-head-title-category select {
+.adminReport-head-title-category select {
     background-color: #F6F6F6;
     width: 100%;
     height: 60px;
@@ -75,7 +75,7 @@
     border-radius: 5px;
 }
 
-.free-search-category {
+.adminReport-search-category {
     background-color: #F6F6F6;
     width: 120px;
     height: 60px;
@@ -85,7 +85,7 @@
     align-items: center;
 }
 
-.free-search-category select {
+.adminReport-search-category select {
     background-color: #F6F6F6;
     width: 100%;
     height: 60px;
@@ -117,7 +117,7 @@
     border-radius: 5px;
 }
 
-.free-write-button button {
+.adminReport-write-button button {
     position: relative;
     all : inherit;
 }
@@ -163,6 +163,7 @@ button[type="submit"]:hover {
 
 .postList {
     border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
     width: 80%;
     height: 109px;
     text-align: center;
@@ -182,13 +183,23 @@ button[type="submit"]:hover {
     display: block;
 }
 
-#postUser {
+#postUser1 {
+    width: 10%;
+    display: block;
+}
+
+#postUser2 {
     width: 10%;
     display: block;
 }
 
 #postDate {
     width: 13%;
+    display: block;
+}
+
+#postStatus {
+    width: 10%;
     display: block;
 }
 
@@ -224,13 +235,23 @@ button[type="submit"]:hover {
     display: block;
 }
 
-#testPost-postUser {
+#testPost-postUser1 {
+    width: 10%;
+    display: block;
+}
+
+#testPost-postUser2 {
     width: 10%;
     display: block;
 }
 
 #testPost-postDate {
     width: 13%;
+    display: block;
+}
+
+#testPost-postStatus {
+    width: 10%;
     display: block;
 }
 

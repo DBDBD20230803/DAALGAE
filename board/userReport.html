@@ -2,7 +2,7 @@
 <html lang="ko" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>boardAnnouncementSelect</title>
+    <title>userReport</title>
 
     <!--meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/sanitize.css">
-    <link rel="stylesheet" href="/board/css/boardAnnouncementSelect.css">
+    <link rel="stylesheet" href="/board/css/boardUserReport.css">
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -31,8 +31,8 @@
     <link href="favicon.ico" rel="apple-touch-icon">
 </head>
 <body>
-    <div class="board-announcement-banner">
-        <h3>공지사항</h3>
+    <div class="board-report-banner">
+        <h3>유저신고</h3>
         <div>
             <a href="/board/mainBoard.html" alt="back-arrow-to-main">
                 <img src="/board/images/board-back-button.png" class="board-button-back-image" alt="back-arrow-to-board-main">
@@ -43,47 +43,27 @@
         </div>
     </div>
     <div class="board-container">
-        <div class="board-announcement-searchBar">
-            <div class="search-buttons">
-                <div class="search-by-text">
-                    <img src="/board/images/reading-glasses.png" alt="readingGlasses" id="readingGlassesImage">
-                    <input type="text" name="textSearching" id="textSearching">
+        
+        <div class="board-report-content-select-container">
+                <div class="board-report-category">
+                    <h4 id="postNo">번호</h4>
+                    <h4 id="postTitle">제목</h4>
+                    <h4 id="postUser">작성자</h4>
+                    <h4 id="postDate">작성일자</h4>
                 </div>
-                <div class="submit-button">
-                    <button type="submit" id="searchButton">검색</button>
-                </div>
-            </div>
-        </div>
-        <div class="board-select-header-buttons">
-            <div class="like-button">
-                <button type="button" id="like-button">
-                    <img src="/board/images/like-button.png" alt="like-button">
-                </button>
-            </div>
-            <div class="report-button">
-                <button type="button" id="report-button">
-                    <img src="/board/images/report-button.png" alt="report-button">
-                </button>
-            </div>
-        </div>
-        <div class="board-announcement-content-select-container">
-            <div class="board-announcement-content-title">
+                <div class="board-report-content-title">
                     <h4 id="postNo">1</h4>
-                    <h4 id="postTitle">인생첫공지</h4>
-                    <h4 id="postUser">daalgae</h4>
-                    <h4 id="postDate">2023-09-11</h4>
-            </div>
-            <div class="board-select-content">
-                <div>
-                    <h4>안녕하세요</h4>
-                    <img src="/board/images/board-dangdanginfotoon-button.png" alt="">
-                    <h4>귀여운 강아지를 자주 봅시다.</h4>
+                    <h4 id="postTitle">blahblah</h4>
+                    <h4 id="postUser">김유빈</h4>
+                    <h4 id="postDate">2023-09-12</h4>
                 </div>
+            <div class="board-report-section">
+                    <textarea name="userReport" id="userReport" cols="30" rows="10" placeholder="신고 내용을 작성해주세요."></textarea>
             </div>
         </div>
         <div class="board-select-footer">
             <div class="back-to-boast-list">
-                <a href="/board/announcementBoard.html">목록</a>
+                <a href="#">신고</a>
             </div>
         </div>
     </div>

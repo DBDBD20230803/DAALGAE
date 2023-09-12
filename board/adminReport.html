@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>adminReport</title>
+
+    <!--meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="le=edge">
+    
+    <!--bootstrap-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--css-->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/sanitize.css">
+    <link rel="stylesheet" href="/board/css/boardAdminReport.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!--js-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!--favicon--->
+    <link href="favicon.ico" rel="icon">
+    <link href="favicon.ico" rel="apple-touch-icon">
+</head>
+<body>
+    <div class="board-adminReport-banner">
+        <h3>신고관리</h3>
+        <div>
+            <a href="/board/mainBoard.html" alt="back-arrow-to-main">
+                <img src="/board/images/board-back-button.png" class="board-button-back-image" alt="back-arrow-to-board-main">
+            </a>
+        </div>
+        <div>
+            <img src="/board/images/board-banner-image-2.png" class="board-banner-image-2" alt="play-with-dog-image">
+        </div>
+    </div>
+    <div class="board-container">
+        <div class="board-adminReport-searchBar">
+            <div class="search-buttons">
+                <div class="adminReport-head-title-category">
+                    <select name="adminReport-head-title-category" id="adminReport-head-title-category">
+                        <option value="말머리" selected>말머리</option>
+                        <option value="용품">용품</option>
+                        <option value="먹거리">먹거리</option>
+                    </select>
+                </div>
+                <div class="adminReport-search-category">
+                    <select name="adminReport-search-category" id="adminReport-search-category">
+                        <option value="제목">제목</option>
+                        <option value="제목내용">제목 + 내용</option>
+                        <option value="작성자">작성자</option>
+                    </select>
+                </div>
+                <div class="search-by-text">
+                    <img src="/board/images/reading-glasses.png" alt="readingGlasses" id="readingGlassesImage">
+                    <input type="text" name="textSearching" id="textSearching">
+                </div>
+                <div class="submit-button">
+                    <button type="submit" id="searchButton">검색</button>
+                </div>
+            </div>
+        </div>
+        <div class="board-list-container">
+            <div class="board-postCategory">
+                <h4 id="postNo">번호</h4>
+                <h4 id="postTitle">제목</h4>
+                <h4 id="postUser1">작성자</h4>
+                <h4 id="postDate">등록일자</h4>
+                <h4 id="postUser2">신고자</h4>
+                <h4 id="postStatus">상태</h4>
+            </div>
+        </div>
+        <div class="postList">
+            <a href="/board/adminReportBoardSelect.html" class="post">
+                <div class="post-info">
+                    <h4 id="testPost-postNo">1</h4>
+                    <h4 id="testPost-postTitle">집가고싷다시파</h4>
+                    <h4 id="testPost-postUser1">rladbqls</h4>
+                    <h4 id="testPost-postDate">2023-09-11</h4>
+                    <h4 id="testPost-postUser2">dlthakd</h4>
+                    <h4 id="testPost-postStatus">미완료</h4>
+                </div>
+            </a>
+        </div>
+        <div class="board-paging-button">
+            <button type="button" id="previousPageButton">
+                <img src="/board/images/previousPageButton.png" alt="">
+            </button>
+            <button class="pageNumber">
+                <div id="postPage1">
+                    <div></div>
+                    <h4>1</h4>
+                </div>
+            </button>
+            <button type="button" id="nextPageButton">
+                <img src="/board/images/nextPageButton.png" alt="">
+            </button>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>

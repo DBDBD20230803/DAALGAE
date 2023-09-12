@@ -1,4 +1,4 @@
-.board-boast-banner {
+.board-adminReport-banner {
     width: 100%;
     height: 500px;
     margin: 0px;
@@ -30,11 +30,8 @@
     position: relative;
 }
 
-.board-boast-searchBar {
-    border-top: 1px solid #D8D8D8;
-    border-bottom: 1px solid #D8D8D8;
+.board-adminReport-searchBar {
     position: relative;
-    margin-top: 100px;
     width: 100%;
     height: 100px;
     display: flex;
@@ -109,41 +106,18 @@ button[type="button"]:hover {
     cursor: pointer;
 }
 
-.board-boast-content-select-container{
+.board-adminReport-content-select-container{
     width: 100%;
-    height: 700px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.board-select-header-buttons {
+.board-adminReport-content-title {
     width: 80%;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    gap: 10px;
-}
-
-#like-button {
-    border: 0;
-    width: 54px;
-    height: 54px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-#report-button {
-    border: 0;
-    width: 54px;
-    height: 54px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.board-boast-content-title {
-    width: 100%;
-    height: 90px;
+    height: 300px;
     border-top: 2px solid #787878;
     border-bottom: 1px solid #DBDBDB;
     text-align: center;
@@ -179,135 +153,51 @@ button[type="button"]:hover {
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    margin: 50px;
+    padding: 50px;
+}
+
+.board-report-content {
+    width: 80%;
+    height: 100%;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
 }
 
 .board-select-footer {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-.comment-section-title {
     width: 80%;
-    height: 60px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 5px;
-    border-bottom: 1px solid #DBDBDB;
-    margin: 5px;
-}
-
-.comment {
-    width: 80%;
-    height: 40px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 5px;
-    margin: 5px;
-}
-
-.comment button {
-    border: 0;
-}
-
-#comment-date {
-    font-weight: lighter;
-}
-
-.comment img {
-    width: 25px;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.comment-content {
-    display: flex;
-    justify-content: flex-start;
-    width: 80%;
-}
-
-.comment-delete-button {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
-    bottom: 11%;
-}
-
-.comment-delete-button button {
-    width: 90px;
-    height: 50px;
-    background-color: #EFEFEF;
-    border-radius: 5px;
-    border: 0;
-}
-
-.write-comment {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 100px;
-    gap: 20px;
-}
-
-.write-comment-info {
-    border: 0;
-    background-color: #DBDBDB;
-    width: 280px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-}
-
-.write-comment-content{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.write-comment-content textarea{
-    width: 100%;
-    height: 100px;
-    resize: none;
-}
-
-.write-comment-button {
-    border: 0;
-    background-color: #434343;
-    width: 150px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.write-comment-button button {
-    border: 0;
-    background-color: #434343;
-    width: 150px;
-    height: 100px;
-    color: white;
-    font-size: 16px;
-}
-
-.back-to-boast-list {
-    width: 80%;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 100px;
+    margin: 50px;
+    gap: 10px;
 }
 
 .back-to-boast-list a {
+    width: 120px;
+    height: 60px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #A6CEF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reportButton-box {
+    width: 120px;
+    height: 60px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #A6CEF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reportButton {
     width: 120px;
     height: 60px;
     border: 0;

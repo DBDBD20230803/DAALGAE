@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3360cebc-2230-422e-80b9-66e25cbf0d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Component/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/mainBoard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/sanitize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/logo2_w.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/mainPageBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/menuSearch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/myPage.png" beforeDir="false" />
-    </list>
+    <list default="true" id="3360cebc-2230-422e-80b9-66e25cbf0d74" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +35,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="20230912-sh-005" />
+                    <option name="lastUsedInstant" value="1694485070" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="somang" />
                     <option name="lastUsedInstant" value="1694414771" />
@@ -147,6 +121,7 @@
       <workItem from="1694390439305" duration="10657000" />
       <workItem from="1694414739995" duration="2017000" />
       <workItem from="1694444179771" duration="3000" />
+      <workItem from="1694484479993" duration="593000" />
     </task>
     <servers />
   </component>

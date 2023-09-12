@@ -144,18 +144,39 @@
 
 .infoImageAndDesc1 {
     position: relative;
+    z-index: 1;
 }
 
 .infoImageAndDesc2 {
     position: relative;
     top: 5px;
+    z-index: 1;
 }
 
 .infoImageAndDesc3 {
     position: relative;
     top: -1px;
+    z-index: 1;
 }
 .infoImageAndDesc4 {
     position: relative;
     top: -13px;
+    z-index: 1;
+}
+
+.whiteSpaceEncycle {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #f4f4f4;
+}
+
+.logoInPage {
+    position: absolute;
+    background-image: url("../images/DAALGAE_LOGO.png");
+    width: 1135px;
+    height: 182px;
+    top: -210px;
+    right: 0px;
+    z-index: 0;
 }
